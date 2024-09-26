@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "BlastScan",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/blastscan-logo.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://blastscan.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://blastscan.github.io/sitemap.xml",
+    "mbrsiteDomain": "lfoges9vyt",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Blastscan™ | Home Official Site",
+        "meta_descr": "Frequently Asked Questions. Every block explorer built by Blastscan ( eg. BscScan, PolygonScan, HecoInfo ) requires a different account to be created and hence a different set of API keys 🗝️.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://blastscan.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/blastscan.png\" alt=\"Blstscan\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "upsYGSYw78",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Blastscan: Unleashing the Power of Blockchain Exploration</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  In the ever-evolving world of blockchain technology, transparency and accessibility are paramount. As cryptocurrencies and decentralized applications (DApps) gain traction, tools that enable users to explore and analyze blockchain data have become essential. <a href=\"https://blastscan.github.io/\" class=\"text-primary\"><b>Blastscan</b></a> emerges as a powerful blockchain explorer designed to offer users a seamless experience in tracking transactions, analyzing smart contracts, and gaining insights into various blockchain ecosystems. In this blog, we will explore the features, benefits, and significance of <a href=\"https://blastscan.io/\" class=\"text-primary\"><b>Blastscan</b></a>, as well as its role in enhancing user engagement within the blockchain community.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Blastscan?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  Blastscan is a blockchain explorer that provides comprehensive analytics and data visualization for various blockchain networks. Launched to facilitate the exploration of blockchain data, Blastscan aims to empower users—be they developers, traders, or casual investors—by providing them with the necessary tools to make informed decisions. By offering real-time access to transaction data, wallet information, and smart contract interactions, Blastscan plays a crucial role in promoting transparency within the blockchain ecosystem.<br><br><b>Key Features of Blastscan</b><br><b>Real-Time Transaction Tracking:</b> Users can track individual transactions in real-time. By entering a transaction hash, they can access detailed information, including transaction status, timestamp, block height, and gas fees.<br><b>Wallet Insights:</b> Blastscan allows users to input wallet addresses to view detailed information about their holdings, transaction history, and asset distributions. This feature is vital for monitoring investments and understanding portfolio performance.<br><b>Smart Contract Analysis:</b> Users can explore smart contracts deployed on various blockchains, analyzing their code and interactions. This transparency helps users verify the legitimacy and functionality of DApps.<br><b>Token Analytics:</b> Blastscan provides in-depth analytics for different tokens, including price data, market capitalization, and trading volumes. This information is essential for investors looking to make data-driven decisions.<br><b>User-Friendly Interface:</b> The platform features an intuitive design that simplifies navigation and enhances the user experience, making it accessible for both newcomers and experienced users.<br><b>Cross-Chain Support:</b> Blastscan supports multiple blockchain networks, allowing users to explore various ecosystems from a single platform. This cross-chain capability increases its utility and relevance in the diverse world of blockchain.<br><b>Community Engagement Tools:</b> Blastscan includes features that foster community engagement, such as discussion forums and social sharing options, allowing users to connect and share insights.<b><br></b><br>\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Importance of Blockchain Explorers</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Enhancing Transparency</b><br>Blockchain technology operates on principles of transparency and accountability. Explorers like Blastscan play a crucial role in upholding these values by providing users with real-time access to blockchain data. This transparency builds trust within the community and enables users to verify transactions independently.<br><br><b>2. Informed Decision-Making</b><br>Access to accurate and timely information is vital for traders and investors. Blastscan equips users with the necessary tools to analyze transactions, monitor token performance, and keep track of their investments. By leveraging Blastscan’s comprehensive analytics, users can make informed decisions and execute strategies based on real-time data.<br><br><b>3. Simplifying Complex Data</b><br>The blockchain generates vast amounts of data daily, making it challenging for users to navigate without proper tools. Blastscan simplifies this complexity by presenting data in an organized and user-friendly format, allowing users to access the information they need effortlessly.<br><br><b>4. Fostering Community Engagement</b><br>Blockchain explorers like Blastscan play a vital role in fostering community engagement. By providing insights into transaction volumes, popular tokens, and DApps, the platform encourages users to participate actively in the ecosystem, driving growth and adoption.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How to Use Blastscan</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Step 1: Accessing Blastscan</b><br>To get started with Blastscan, simply visit the Blastscan website. The platform is accessible via web browsers, making it easy to use on various devices.<br><br><b>Step 2: Tracking Transactions</b><br>To track a specific transaction, enter the transaction hash in the search bar. This will pull up detailed information regarding the transaction, including its status, timestamp, block height, and gas fees. This feature is especially useful for confirming whether a transaction has been successfully processed.<br><br><b>Step 3: Viewing Wallet Information</b><br>To check account balances and transaction history, enter a wallet address in the search bar. This will display all relevant information, including token balances and a list of recent transactions associated with that address. Users can monitor their own wallets or analyze the activities of others.<br><br><b>Step 4: Analyzing Tokens</b><br>For those interested in specific tokens, navigate to the \"Tokens\" section. Here, you can search for tokens by name or symbol to view price information, market capitalization, and trading volumes. This data is crucial for assessing the potential of various tokens before making investment decisions.<br><br><b>Step 5: Investigating Smart Contracts</b><br>If you’re interested in smart contracts, Blastscan allows you to search for specific contract addresses. This feature provides insights into the contract code, interactions, and transaction history, ensuring that users can verify the integrity and functionality of DApps.<br><br><b>Step 6: Engaging with the Community</b><br>Blastscan fosters community engagement through features that allow users to share insights and discuss trends. Engaging with the community helps users stay informed and connected within the blockchain ecosystem.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Significance of Blastscan in the Blockchain Ecosystem</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Supporting Developers</b><br>For developers building on various blockchain networks, Blastscan serves as an invaluable resource. The platform provides insights into smart contracts, allowing developers to analyze their code and assess interactions. This transparency fosters a culture of accountability and ensures that developers can optimize their applications for better performance.<br><br><b>2. Enhancing User Experience</b><br>As more users flock to the world of blockchain and cryptocurrencies, providing a seamless user experience becomes paramount. Blastscan enhances this experience by offering a centralized location for accessing blockchain data. Users can easily track transactions, monitor investments, and explore new tokens all in one place.<br><br><b>3. Promoting Decentralization</b><br>One of the core tenets of blockchain technology is decentralization. Blastscan embodies this principle by enabling users to access information independently. This reduces reliance on centralized entities and promotes a more decentralized ecosystem where users can verify transactions and monitor their assets.<br><br><b>4. Driving Adoption</b><br>By facilitating easier access to blockchain data, Blastscan plays a crucial role in driving the adoption of various blockchain networks. As users become more comfortable navigating the ecosystem, they are more likely to engage in trading, investing, and participating in DeFi activities.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Future Developments for Blastscan</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Enhanced Analytics Tools</b><br>As the blockchain landscape continues to grow, Blastscan plans to introduce advanced analytics tools that provide deeper insights into transaction patterns, user behavior, and token performance. These tools will empower users to make even more informed decisions.<br><br><b>2. Improved User Experience</b><br>Blastscan is committed to continuously improving its user interface and experience. Future updates may include personalized dashboards, advanced search filters, and enhanced visualizations to help users better understand the data they are accessing.<br><br><b>3. Community Features</b><br>To foster further community engagement, Blastscan is exploring the integration of social features that allow users to share insights, discuss trends, and collaborate on investment strategies. This will help build a stronger community around the various blockchain ecosystems.<br><br><b>4. Cross-Chain Compatibility</b><br>As the DeFi space evolves, cross-chain interactions are becoming increasingly important. Blastscan is considering adding features that allow users to track assets and transactions across multiple blockchains, enhancing its utility as a comprehensive blockchain explorer.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Use Cases of Blastscan</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. For Traders</b><br>For traders, Blastscan is an essential tool for monitoring transactions and analyzing token performance. Users can track their own transactions and those of others, identify trends, and execute trades based on real-time data.<br><br><b>2. For Investors</b><br>Investors can leverage Blastscan to conduct thorough research before making investment decisions. By analyzing token metrics, transaction history, and market trends, they can gain deeper insights into potential opportunities and risks.<br><br><b>3. For Developers</b><br>Developers building on various blockchain networks can utilize Blastscan to test and verify their smart contracts. By monitoring contract interactions and transaction histories, they can ensure that their applications function correctly and efficiently.<br><br><b>4. For Researchers</b><br>Researchers interested in blockchain technology can use Blastscan as a valuable resource for studying various blockchain ecosystems. By analyzing transaction patterns, token migrations, and DApp usage, they can gain insights into the functioning of decentralized networks.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Data Overload</b><br>As the blockchain networks continue to grow, the volume of data available on Blastscan may become overwhelming for some users. It’s essential for users to develop strategies for efficiently navigating and analyzing this data to avoid information overload.<br><br><b>2. Security Risks</b><br>While Blastscan is a powerful tool, users should remain vigilant and practice good security hygiene. Always double-check transaction details and contract addresses before interacting with them to mitigate the risk of scams or phishing attempts.<br><br><b>3. Market Volatility</b><br>The cryptocurrency market is known for its volatility, and Blastscan users should be aware of the risks associated with trading and investing. Conducting thorough research and employing sound risk management practices is crucial for success in this space.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Blastscan is an indispensable resource for anyone navigating the world of blockchain and cryptocurrencies. By providing real-time access to crucial blockchain data, Blastscan empowers traders, developers, and investors to make informed decisions and engage actively in the decentralized finance landscape. Its commitment to transparency, user experience, and community engagement has solidified its position as a leading blockchain explorer.<br><br>As the blockchain ecosystem continues to evolve, Blastscan will undoubtedly play a critical role in shaping its future. Whether you’re a newcomer looking to explore the world of decentralized finance or an experienced user seeking detailed insights, Blastscan is your go-to resource for all things related to blockchain exploration. With its focus on continuous improvement and innovation, Blastscan is well-positioned to remain a vital player in the cryptocurrency landscape for years to come.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "upsYHa71ZH",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
